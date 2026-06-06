@@ -28,30 +28,6 @@ Aspiring Software Developer
 - JavaScript (Vanilla JS)
 
 ---
-## 📁 Project Structure
-
-Responsive-Portfolio-Website/
-│
-├── index.html
-├── css/
-│ └── style.css
-├── js/
-│ └── script.js
-├── img/
-│ ├── Nandana.jpeg
-│ ├── bck.png
-│ ├── project1.jpg
-│ ├── project2.jpg
-│ ├── project3.jpg
-│ ├── project4.jpg
-│ ├── project5.jpg
-│ ├── project6.jpg
-│ └── OIP.webp
-├── files/
-│ └── resume.pdf
-
-
----
 
 ## 📸 Projects Showcased
 - Portfolio Website (Main Project)
