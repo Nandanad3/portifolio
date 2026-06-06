@@ -45,8 +45,3 @@ Aspiring Software Developer
 - cd Responsive-Portfolio-Website
 - 3.Open index.html in browser
 ---
-##📬 Contact
-- Email: your-email@example.com
-- LinkedIn: https://linkedin.com/in/your-profile
-- GitHub: https://github.com/your-username
----
