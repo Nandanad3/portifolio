@@ -39,12 +39,14 @@ Aspiring Software Developer
 ---
 
 ## ⚙️ How to Run This Project
-1.Clone the repository
-git clone https://github.com/Nandanad3/portfolio.git
-2.Go to project folder
-cd Responsive-Portfolio-Website
-3.Open index.html in browser
-📬 Contact
-Email: your-email@example.com
-LinkedIn: https://linkedin.com/in/your-profile
-GitHub: https://github.com/your-username
+- 1.Clone the repository
+- git clone https://github.com/Nandanad3/portfolio.git
+- 2.Go to project folder
+- cd Responsive-Portfolio-Website
+- 3.Open index.html in browser
+---
+##📬 Contact
+- Email: your-email@example.com
+- LinkedIn: https://linkedin.com/in/your-profile
+- GitHub: https://github.com/your-username
+---
