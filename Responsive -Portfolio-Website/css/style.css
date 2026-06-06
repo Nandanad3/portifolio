@@ -89,7 +89,7 @@ section {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('/img/bck.png');
+    background-image: url('../img/bck.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -539,4 +539,262 @@ form textarea {
     .navlist.open{
         top: 100%;
     }
+}
+/* ===============================
+   MODERN PORTFOLIO UPGRADES
+================================= */
+
+:root{
+    --bg-color:#0f172a;
+    --second-bg-color:#1e293b;
+    --text-color:#ffffff;
+    --second-color:#cbd5e1;
+    --main-color:#7c3aed;
+}
+
+/* Sticky Navbar */
+
+header.sticky{
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+/* Hero Overlay */
+
+.home::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.5);
+}
+
+.home-text{
+    position:relative;
+    z-index:2;
+}
+
+/* Typing Text */
+
+.typing{
+    color:var(--main-color);
+}
+
+/* Modern Buttons */
+
+.btn{
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(124,58,237,.4);
+}
+
+/* About Section */
+
+.about-img img{
+    border-radius:20px;
+    box-shadow:0 0 40px rgba(124,58,237,.4);
+}
+
+/* Skills Section */
+
+.skills{
+    background:var(--second-bg-color);
+}
+
+.skill-card{
+    background:#111827;
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    border:1px solid var(--main-color);
+}
+
+/* Cards */
+
+.box{
+    background:#111827;
+    border-radius:20px;
+    border:1px solid transparent;
+}
+
+.box:hover{
+    border-color:var(--main-color);
+    transform:translateY(-10px);
+}
+
+/* Projects */
+
+.row{
+    border-radius:20px;
+}
+
+.row img{
+    height:280px;
+    object-fit:cover;
+}
+
+.layer{
+    background:linear-gradient(
+        transparent,
+        rgba(124,58,237,.95)
+    );
+}
+
+.layer h5{
+    font-size:22px;
+    color:white;
+}
+
+.layer p{
+    text-align:center;
+    color:white;
+}
+
+/* Education */
+
+#education{
+    background:var(--bg-color);
+}
+
+/* Contact */
+
+.contact-form form input,
+.contact-form textarea{
+    background:#111827;
+    border:1px solid #334155;
+}
+
+.contact-form form input:focus,
+.contact-form textarea:focus{
+    border-color:var(--main-color);
+}
+
+/* Social Icons */
+
+.contact-icons i{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#111827;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-icons i:hover{
+    background:var(--main-color);
+    color:white;
+}
+
+/* Footer */
+
+.end{
+    border-top:1px solid #334155;
+}
+
+/* Animations */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.home-text,
+.about-text,
+.box,
+.row{
+    animation:fadeUp 1s ease forwards;
+}
+
+/* Responsive */
+
+@media(max-width:920px){
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .portfolio-content{
+        grid-template-columns:1fr;
+    }
+
+    .home-text h1{
+        font-size:3.5rem;
+    }
+}
+
+@media(max-width:768px){
+
+    #menu-icon{
+        display:block;
+    }
+
+    .navlist{
+        position:absolute;
+        top:-1000px;
+        left:0;
+        right:0;
+        display:flex;
+        flex-direction:column;
+        background:#111827;
+        text-align:center;
+    }
+
+    .navlist.open{
+        top:100%;
+    }
+
+    .navlist a{
+        display:block;
+        padding:15px;
+    }
+
+    .home-text h1{
+        font-size:2.8rem;
+    }
+
+    .home-text h3{
+        font-size:1.8rem;
+    }
+
+    .main-text h2{
+        font-size:2.2rem;
+    }
+}
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:10px;
+}
+
+.tags span{
+    font-size:12px;
+    padding:5px 10px;
+    background:#1e293b;
+    border-radius:20px;
+    color:#cbd5e1;
 }
